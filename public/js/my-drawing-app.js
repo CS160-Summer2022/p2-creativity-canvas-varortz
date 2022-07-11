@@ -1,4 +1,4 @@
-/* The code for our drawing application! 
+/* The code for our drawing application!
 Feel free to delete any/all of it and replace with your own functionality. */
 
 var path;
@@ -10,7 +10,7 @@ tool.onMouseDown = function(event) { //This code in this function is called when
     path.add(event.point);
     path.strokeColor = currentColor;
     path.strokeWidth = currentWidth;
-    console.log(event.point); //this commands log to the Console the coordinates of the mouse click. Feel free to delete it! 
+    console.log(event.point); //this commands log to the Console the coordinates of the mouse click. Feel free to delete it!
 }
 tool.onMouseDrag = function(event) {
     path.add(event.point); //Add points to the path as the user drags their mouse.
@@ -24,6 +24,7 @@ $('#thick-green').on('click', function (e) { //jquery button click code for our 
     currentColor = 'green';
     currentWidth = 15;
 })
+
 $('#eraser').on('click', function (e) { //jquery button click code for our eraser button.
     currentColor = 'white';
     currentWidth = 20;
