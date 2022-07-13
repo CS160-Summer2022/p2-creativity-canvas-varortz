@@ -8,7 +8,7 @@ body { /*default body style (black Verdana)*/
 
 header {
   background-color: ##7A5F3C;
-  height: calc(5.5vh)
+  height: calc(5.5vh);
 }
 .menu { /* menu style */
   float: left;
@@ -62,7 +62,7 @@ header {
   }
 }
 
-#main-canvas {
+#my-canvas {
   background-color: white;
   border-radius: 1px;
   margin: 0px !important;
@@ -70,11 +70,11 @@ header {
 }
 
 .chalkboard-g {
-  background-color: #3E5C32; /* chalkboard color GREEN*/
+  background-color: #3E5C32 !important; /* chalkboard color GREEN*/
 }
 
 .chalkboard-b {
-  background-color: #2C2E2B; /* chalkboard color BLACK*/
+  background-color: #2C2E2B !important; /* chalkboard color BLACK*/
 }
 
 .topb-button {
@@ -101,9 +101,6 @@ header {
   background-image: linear-gradient(#DBDBDB, #C7C7C7);
 
 }
-
-
-
 
 /* Button 48 by Squarespace
   link: https://getcssscan.com/css-buttons-examples*/
@@ -175,9 +172,9 @@ header {
   outline: none;     /*how to remove highlight when clicking on button*/
   box-shadow: none;
   }
-
 /* END OF Button 48*/
 
+/* Code found in https://www.codegrepper.com/code-examples/whatever/remove+button+highlight+on+click for button 50*/
 .tb-btn:not([disabled]):active {
   transform: translate(2px, 2px);
   display: inline;
@@ -201,7 +198,15 @@ header {
   display: inline-block;
 }
 
-.toggle {
+.mode {
   display: inline !important;
   margin: 60px 10px 0px 25px;
+}
+
+.dropdown-item {
+  background-color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #D9D9D9;
 }
