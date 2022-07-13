@@ -39,6 +39,8 @@ $('#eraser').on('click', function (e) { //jquery button click code for our erase
     currentWidth = 20;
 })
 
+
+
 /*CHANGING TO BLACK CHALKBOARD*/
 $('#bChalk').on('click', function (e) {
   console.log('clicked-bChalk')
@@ -78,8 +80,11 @@ $('#wCanvas').on('click', function (e) {
   }
 })
 
-$('mode').on('click', function (e) {
-  console.log('green')
+$('#palette').on('click', function (e) {
+  console.log('color extractor! :D')
   $('#my-canvas')
-          .toggleClass('chalkboard-b')
+          .toggleClass('move-canvas')
+  $('#color-extractor')
+          .toggleClass('move-c-extractor')
+
 })

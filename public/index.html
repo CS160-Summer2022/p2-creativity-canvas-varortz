@@ -45,6 +45,7 @@
           <a class="dropdown-item" href="#">Dowload</a>
           <a class="dropdown-item" href="#">Rename</a>
         </div>
+
       </div>
       <!--DROPDOWN FROM BOOTSTRAP: -->
 
@@ -68,6 +69,8 @@
 
       <h5 style="display: inline-block; margin-left: 18.5%; color: #707070;" id="title-drawing">Untitled Document ▾</h5>
 
+      <img src="/images/boar.png" width="110" height="110" style="float:right; margin-right:50px; display: inline;"/>
+
     </header>
 
     <main>
@@ -77,7 +80,7 @@
 
 
       <div class="container">
-        <div class="row" style="width: 95vw; left: 10px;">
+        <div class="row" style="width: 95vw; left: 10px; margin: 0px;">
           <div class="row-tb">
             <img src="/images/brush.png" width="35" height="35" id="brush" style="margin: 20px 35px;"  class="tb-btn"/>
             <span class="dot blk tb-btn"> </span>
@@ -120,6 +123,18 @@
 
             <canvas class="noCursor responsive" id="my-canvas" width = "800" height = "500" style.cursor='none' style="left: 13%; position: relative;"></canvas>
 
+          </div>
+
+          <div class="col-3" id="color-extractor" style="height:500px; width: 5px; background-color: #EDEDED; display: none; bottom: 30px;"> <!-- Column for color extractor -->
+            <div class="row" id="insert-image" style="height: 220px;">
+              <h6 class="center" style="color: #A6A6A6; font-family: Clarkson,Helvetica,sans-serif; text-align: center; top: 25px;"> <br> <br>INSERT IMAGE <br> OR <br> LINK</h6>
+            </div>
+            <strong>
+              <h6 class="center" style="color: #696969; font-family: Clarkson,Helvetica,sans-serif; text-align: center; top: 25px;"> COLOR PALETTE</h6>
+            </strong>
+
+            <div class="row" id="c-palette" style="height: 230px; background-color: white; margin-top: 30px; border-radius: 30px;">
+            </div>
           </div>
 
 

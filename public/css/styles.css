@@ -66,6 +66,7 @@ header {
   background-color: white;
   border-radius: 1px;
   margin: 0px !important;
+  bottom: 30px;
 
 }
 
@@ -83,19 +84,19 @@ header {
 
 .row-tb {
   border-radius: 20px;
-  margin-top: 50px;
+  margin-top: 5px;
   height: calc(100vh /10);
   width: 80vw;
   background-color: #DBDBDB;
-  position: relative;
+  position: static;
   background-image: linear-gradient(#DBDBDB, #C7C7C7);
 
 }
 
-.mode-toggle {
+.mode {
   border-radius: 20px;
-  margin-top: 50px;
-  height: calc(100vh /10);
+  bottom: 50px;
+  height: calc(100vh /13);
   width: 8vw;
   display: inline-block;
   background-image: linear-gradient(#DBDBDB, #C7C7C7);
@@ -209,4 +210,25 @@ header {
 
 .dropdown-item:hover {
   background-color: #D9D9D9;
+}
+
+.move-canvas {
+  left: 0% !important;
+}
+
+.move-c-extractor {
+  display: inline-block !important;
+}
+
+#insert-image {
+  border-radius: 30px;
+  border: 14px double #CCCCCC;
+  background-color: #EDEDED;
+
+}
+
+#c-palette {
+  height: 180px;
+  background-image: linear-gradient(#DBDBDB, #C7C7C7);
+
 }
