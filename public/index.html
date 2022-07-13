@@ -32,13 +32,41 @@
   </head>
 
 
-  <body style="background-color: #CE9F67;">
+  <body style="background-color: #EDEDED;">
 
     <header class="header">
       <!-- HTML !-->
-      <button class="button-50" role="button">File</button>
-      <button class="button-50" role="button">Edit</button>
-      <button class="button-50" role="button">Insert</button>
+      <!--DROPDOWN FROM BOOTSTRAP: -->
+      <div class="dropdown">
+      <!--  <button class="button-50 " id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">File</button> -->
+      <!--  <button class="button-84" role="button" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">File</button> -->
+        <button class="button-48" role="button" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text">File</span></button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Share</a>
+          <a class="dropdown-item" href="#">Dowload</a>
+          <a class="dropdown-item" href="#">Rename</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+      <button class="button-48" role="button" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text">Edit</span></button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="button-48" role="button" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="text">Insert</span></button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Grid</a>
+          <a class="dropdown-item" href="#">Image</a>
+          <a class="dropdown-item" href="#">Table</a>
+        </div>
+      </div>
+
+      <h5 style="display: inline-block; margin-left: 18.5%; color: #707070;" id="title-drawing">Untitled Document ▾</h5>
 
     </header>
 
@@ -49,22 +77,46 @@
 
 
       <div class="container">
-        <div class="row-tb center">
-          <img src="/images/brush.png" width="35" height="35" id="brush" style="margin: 20px 35px;"  class="tb-btn"/>
-          <span class="dot blk tb-btn"> </span>
-          <img src="/images/eraser.png" width="39" height="42" id="eraser" style="margin: 18px 35px 23px 130px; position: fixed;"  class="tb-btn"/>
-          <img src="/images/palette.png" class="tb-btn" width="39" height="41" id="palette" style="margin: 20px 35px 20px 130px; float: right;"  class="tb-btn"/>
+        <div class="row" style="width: 95vw; left: 10px;">
+          <div class="row-tb">
+            <img src="/images/brush.png" width="35" height="35" id="brush" style="margin: 20px 35px;"  class="tb-btn"/>
+            <span class="dot blk tb-btn"> </span>
+            <img src="/images/eraser.png" width="39" height="42" id="eraser" style="margin: 18px 35px 23px 138px; position: fixed;"  class="tb-btn"/>
+            <img src="/images/palette.png" class="tb-btn" width="39" height="41" id="palette" style="margin: 20px 35px 20px 130px; float: right;"  class="tb-btn"/>
+            <img src="/images/select.png" width="39" height="42" id="select" style="margin: 20px 35px 23px 245px; position: fixed;"  class="tb-btn"/>
+            <img src="/images/text.png" width="39" height="42" id="text" style="margin: 19px 35px 23px 359px; position: fixed;"  class="tb-btn"/>
+            <img src="/images/hand.png" width="39" height="40" id="hand" style="margin: 18px 35px 23px 475px; position: fixed;"  class="tb-btn"/>
+            <img src="/images/shapes.png" width="42" height="42" id="shapes" style="margin: 18px 35px 23px 595px; position: fixed;"  class="tb-btn"/>
+            <img src="/images/sticky.png" width="36" height="38" id="sticky" style="margin: 20px 35px 23px 733px; position: fixed;"  class="tb-btn"/>
+
+
+
+          </div>
+
+          <div class="dropdown" style="float: right;">
+            <button class="button-48 toggle" role="button" id="dropdownMenuButton" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="text">MODE</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">White Canvas</a>
+              <a class="dropdown-item" href="#">Black Chalkboard</a>
+              <a class="dropdown-item" href="#">Green Chalkboard</a>
+            </div>
+          </div>
+
 
 
 
         </div>
+
+
 
         <br>
         <br>
 
 
         <div class="p-1 row">
-          <canvas class = "noCursor center responsive" id="main-canvas" width = "800" height = "500" style.cursor = 'none' style="margin-bottom: 20px;"></canvas>
+          <canvas class = "noCursor center responsive" id="main-canvas" width = "800" height = "500" style.cursor = 'none' style="margin-bottom: 20px; right: 100px;"></canvas>
 
         </div>
 

@@ -82,75 +82,101 @@ header {
 }
 
 .row-tb {
+  border-radius: 20px;
   margin-top: 50px;
   height: calc(100vh /10);
   width: 80vw;
-  background-color: #7A5F3C;
+  background-color: #DBDBDB;
+  position: relative;
+  background-image: linear-gradient(#DBDBDB, #C7C7C7);
+
+}
+
+.mode-toggle {
   border-radius: 20px;
-  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
-  box-sizing: border-box;
-  border: 1px solid #000;
-}
-
-
-
-
-/* Button 50 by Scoot
-  link: https://getcssscan.com/css-buttons-examples*/
-.button-50 {
-  appearance: button;
-  background-color: #8F6F46;
-  background-image: none;
-  border: 1px solid #000;
-  border-radius: 4px;
-  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
+  margin-top: 50px;
+  height: calc(100vh /10);
+  width: 8vw;
   display: inline-block;
-  font-family: American Typewriter, serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  margin: 0 5px 10px 0;
-  overflow: visible;
-  padding: 12px 40px;
-  text-align: center;
-  text-transform: none;
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  margin: 20px 30px;
+  background-image: linear-gradient(#DBDBDB, #C7C7C7);
+
 }
 
-.button-50:focus {
-  text-decoration: none;
-}
 
-.button-50:hover {
-  text-decoration: none;
-}
 
-.button-50:active {
-  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-  outline: 0;
-}
 
-.button-50:not([disabled]):active {
-  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-  transform: translate(2px, 2px);
-}
+/* Button 48 by Squarespace
+  link: https://getcssscan.com/css-buttons-examples*/
 
-@media (min-width: 768px) {
-  .button-50 {
-    padding: 12px 50px;
+  /* CSS */
+  .button-48 {
+    appearance: none;
+    background-color: #DBDBDB;
+    background-image: linear-gradient(#DBDBDB, #C7C7C7);
+    border-width: 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Clarkson,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 20px 4px;
+    opacity: 1;
+    outline: 0;
+    padding: 1.5em 2.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
   }
-}
 
-/* END OF Button 50*/
+  .button-48:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #EBEBEB;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+  }
 
+  .button-48:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+  }
+
+  .button-48:after {
+    background-color: #FFFFFF;
+  }
+
+  .button-48 span {
+    z-index: 1;
+    position: relative;
+  }
+
+
+  .button-48:focus { /* learned from https://www.codegrepper.com/code-examples/whatever/remove+button+highlight+on+click*/
+  outline: none;     /*how to remove highlight when clicking on button*/
+  box-shadow: none;
+  }
+
+/* END OF Button 48*/
 
 .tb-btn:not([disabled]):active {
   transform: translate(2px, 2px);
@@ -169,4 +195,13 @@ header {
 
 #palette {
 
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.toggle {
+  display: inline !important;
+  margin: 60px 10px 0px 25px;
 }
