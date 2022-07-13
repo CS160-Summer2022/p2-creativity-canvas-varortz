@@ -28,22 +28,54 @@ $('#thick-green').on('click', function (e) { //jquery button click code for our 
 })
 
 $('#eraser').on('click', function (e) { //jquery button click code for our eraser button.
-    currentColor = 'white';
+  if ($('#my-canvas').hasClass('chalkboard-g')) {
+    currentColor = "#3E5C32";
+  } else if ($('#my-canvas').hasClass('chalkboard-b')) {
+    currentColor = "#2C2E2B";
+  } else {
+      currentColor = 'white';
+  }
+
     currentWidth = 20;
 })
 
+/*CHANGING TO BLACK CHALKBOARD*/
 $('#bChalk').on('click', function (e) {
   console.log('clicked-bChalk')
-  $('#my-canvas')
-          .toggleClass('chalkboard-b')
-
-
+  if (!$('#my-canvas').hasClass('chalkboard-b')) { //will only toggle classes if not currently on a black chalkboard
+    if ($('#my-canvas').hasClass('chalkboard-g')) { //if green chalkboard is activated, remove the class
+      $('#my-canvas')
+              .toggleClass('chalkboard-g')
+    }
+    $('#my-canvas')
+            .toggleClass('chalkboard-b')
+  }
 })
 
+/*CHANGING TO GREEN CHALKBOARD*/
 $('#gChalk').on('click', function (e) {
   console.log('green')
-  $('#my-canvas')
-          .toggleClass('chalkboard-g')
+  if (!$('#my-canvas').hasClass('chalkboard-g')) {
+    if ($('#my-canvas').hasClass('chalkboard-b')) {
+      $('#my-canvas')
+              .toggleClass('chalkboard-b')
+
+    }
+    $('#my-canvas')
+            .toggleClass('chalkboard-g')
+  }
+})
+
+/*CHANGING TO WHITE CANVAS*/
+$('#wCanvas').on('click', function (e) {
+  console.log('white')
+   if ($('#my-canvas').hasClass('chalkboard-g')) { //removes green chalk class if activated
+    $('#my-canvas')
+            .toggleClass('chalkboard-g')
+  } else if ($('#my-canvas').hasClass('chalkboard-b')) { //removes black chalk class if activated
+    $('#my-canvas')
+            .toggleClass('chalkboard-b')
+  }
 })
 
 $('mode').on('click', function (e) {
