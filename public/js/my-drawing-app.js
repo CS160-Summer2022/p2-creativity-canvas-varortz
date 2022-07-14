@@ -88,3 +88,47 @@ $('#palette').on('click', function (e) {
           .toggleClass('move-c-extractor')
 
 })
+
+$('#insert-image').on('click', function (e) {
+  console.log('insert image')
+  $('#colorzz')
+          .toggleClass('display-c-palette')
+  console.log($('#c-palette').hasClass('display-c-palette'))
+
+  $('#insert-image')
+          .toggleClass('old-car')
+  $("#extractor-text").hide();
+
+
+})
+
+
+/*
+var cnv = document.getElementById("my-canvas");
+ var ctx = cnv.getContext("2d");
+
+ for(var i=5; i <- 605; i=i+6)
+ {
+   ctx.moveTo(i,5);
+   ctx.lineTo(i, 605);
+
+   ctx.moveTo(5, i);
+   ctx.lineTo(605, i);
+
+   ctx.strokeStyle = "#f0f0f0";
+   ctx.stroke();
+ }
+
+ ctx.beginPath();
+ for(var i=5; i <=605; i=i+30)
+ {
+   ctx.moveTo(i,5);
+   ctx.lineTo(i,605);
+
+   ctx.moveTo(5, i);
+   ctx.lineTo(605, i);
+
+   ctx.strokeStyle = "#c0c0c0";
+   ctx.stroke();
+ }
+*/

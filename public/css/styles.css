@@ -191,6 +191,14 @@ header {
 
 }
 
+.dot-palette {
+  height: 35px;
+  width: 35px;
+  background-color: black;
+  border-radius: 50%;
+
+}
+
 #palette {
 
 }
@@ -224,11 +232,22 @@ header {
   border-radius: 30px;
   border: 14px double #CCCCCC;
   background-color: #EDEDED;
-
 }
+
 
 #c-palette {
   height: 180px;
   background-image: linear-gradient(#DBDBDB, #C7C7C7);
 
+}
+
+.display-c-palette {
+  display: block !important;
+}
+
+.old-car {
+  background-image: url(/images/car.jpg);
+  background-size: cover;
+  border-radius: 30px;
+  border: 10px solid #CCCCCC !important;
 }
