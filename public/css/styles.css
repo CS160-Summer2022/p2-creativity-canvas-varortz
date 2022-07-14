@@ -224,6 +224,10 @@ header {
   left: 0% !important;
 }
 
+.move-canvas2 {
+  left: 1.5% !important;
+}
+
 .move-c-extractor {
   display: inline-block !important;
 }
@@ -234,6 +238,21 @@ header {
   background-color: #EDEDED;
 }
 
+#my-canvas {
+  position: relative;
+  background-color: white;
+  border-radius: 1px;
+  margin: 0px;
+
+}
+
+#my-canvas2 {
+  position: absolute !important;
+  border-radius: 1px;
+  margin-bottom: 20px;
+  opacity: 40%;
+
+}
 
 #c-palette {
   height: 180px;
@@ -250,4 +269,13 @@ header {
   background-size: cover;
   border-radius: 30px;
   border: 10px solid #CCCCCC !important;
+}
+
+.hideGrid {
+  display: inline !important;
+}
+
+.hidetext {
+  display: none;
+  font-size: 0;
 }

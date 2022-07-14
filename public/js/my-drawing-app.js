@@ -54,6 +54,8 @@ $('#bChalk').on('click', function (e) {
   }
 })
 
+
+
 /*CHANGING TO GREEN CHALKBOARD*/
 $('#gChalk').on('click', function (e) {
   console.log('green')
@@ -86,6 +88,8 @@ $('#palette').on('click', function (e) {
           .toggleClass('move-canvas')
   $('#color-extractor')
           .toggleClass('move-c-extractor')
+  $('#my-canvas2')
+          .toggleClass('move-canvas2')
 
 })
 
@@ -97,10 +101,20 @@ $('#insert-image').on('click', function (e) {
 
   $('#insert-image')
           .toggleClass('old-car')
-  $("#extractor-text").hide();
-
+  $("#extractor-text")
+              .toggleClass('hidetext');
 
 })
+
+$('#theGrid').on('click', function (e) {
+  console.log('grid')
+  $("#my-canvas2")
+              .toggleClass('hideGrid');
+})
+
+
+
+
 
 
 /*
