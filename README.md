@@ -31,6 +31,7 @@ You should see the message ``Server is running on http://localhost:8000``
 If you instead see an error message like ``Error: Cannot find module 'express'`` -- see step 3. 
 ### 5. View your website
 Open a web browser (e.g. Google Chrome) to this URL: ``http://localhost:8000/``
+Select the NesHub Max to preview the design on http://localhost:8000/.
 
 You should see a delicious and fabulously designed drawing app! Nice!
 ### 6. Make it your own!
